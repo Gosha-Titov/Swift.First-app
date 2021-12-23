@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginVC: UIViewController {
 
     @IBOutlet weak var viewUnderSignIn: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -21,12 +21,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewUnderSignIn.layer.cornerRadius = 15
-        usernameTextField.text = "admin"
+        usernameTextField.text = "happy.sword"
         passwordTextField.text = "123456"
         
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
-        print(#function)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,13 +44,10 @@ class LoginViewController: UIViewController {
             object: nil
         )
         navigationController?.navigationBar.isHidden = true
-        
-        print(#function)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(#function)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,13 +64,11 @@ class LoginViewController: UIViewController {
             object: nil
         )
         navigationController?.navigationBar.isHidden = false
-
-        print(#function)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print(#function)
+        clearData()
     }
     
     // MARK: - Actions
@@ -119,7 +113,7 @@ class LoginViewController: UIViewController {
         switch identifier {
         case "goToMain":
             if checkUser() {
-                clearData()
+                //clearData()
                 return true
             } else {
                 presentAlert()
@@ -132,7 +126,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private methods
     private func checkUser() -> Bool {
-        usernameTextField.text == "admin" && passwordTextField.text == "123456"
+        usernameTextField.text == "happy.sword" && passwordTextField.text == "123456"
     }
     
     private func presentAlert() -> Void {

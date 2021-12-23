@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "the_witcher_netflix_roach_1080.0.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "the_witcher_netflix_roach_1080.0-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "the_witcher_netflix_roach_1080.0-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

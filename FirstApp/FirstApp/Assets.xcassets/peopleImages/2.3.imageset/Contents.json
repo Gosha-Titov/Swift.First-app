@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Yennefer-Poster-Season-2-Header.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Yennefer-Poster-Season-2-Header-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Yennefer-Poster-Season-2-Header-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
