@@ -1,5 +1,5 @@
 //
-//  FriendProfileCollectionVC.swift
+//  PersonProfileCollectionVC.swift
 //  FirstApp
 //
 //  Created by Гоша on 20.12.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendProfileCollectionVC: UICollectionViewController {
+class PersonProfileCollectionVC: UICollectionViewController {
     var images = [UIImage]()
     var name = String()
     var avatar = UIImage()
@@ -16,16 +16,11 @@ class FriendProfileCollectionVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView?.register(
-            UINib(nibName: "FriendProfileCell", bundle: nil),
-            forCellWithReuseIdentifier: "friendProfileCell"
-        )
         
-//        self.collectionView?.register(
-//            UINib(nibName: "FriendMainView", bundle: nil),
-//            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//            withReuseIdentifier: "friendMainView"
-//        )
+        self.collectionView?.register(
+            PersonPostCell.nib,
+            forCellWithReuseIdentifier: PersonPostCell.identifier
+        )
     }
 
     // MARK: UICollectionViewDataSource
@@ -38,8 +33,9 @@ class FriendProfileCollectionVC: UICollectionViewController {
         
         guard
             let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "friendProfileCell",
-                for: indexPath) as? FriendProfileCell
+                withReuseIdentifier: PersonPostCell.identifier,
+                for: indexPath
+            ) as? PersonPostCell
                 
         else { return UICollectionViewCell() }
         
@@ -53,10 +49,14 @@ class FriendProfileCollectionVC: UICollectionViewController {
                                  at indexPath: IndexPath) -> UICollectionReusableView {
         
         guard kind == UICollectionView.elementKindSectionHeader,
-              let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "friendMainView", for: indexPath) as? FriendMainView
+              let reusableView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: PersonHeaderView.identifier,
+                for: indexPath
+              ) as? PersonHeaderView
         else { return UICollectionReusableView() }
         
-        reusableView.configurate(image: avatar, name: name)
+        reusableView.configurate(avatar: avatar, name: name)
   
         return reusableView
     }

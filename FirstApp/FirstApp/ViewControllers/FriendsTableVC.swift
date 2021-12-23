@@ -32,7 +32,12 @@ final class FriendsTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "PersonCell", bundle: nil), forCellReuseIdentifier: "personCell")
+        
+        tableView.register(
+            PersonCell.nib,
+            forCellReuseIdentifier: PersonCell.identifier
+        )
+        
         loadPeople()
     }
 
@@ -44,7 +49,10 @@ final class FriendsTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath) as? PersonCell
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: PersonCell.identifier,
+                for: indexPath
+            ) as? PersonCell
         else { return UITableViewCell() }
 
         let friend = People.friends[indexPath.row]
@@ -52,7 +60,8 @@ final class FriendsTableVC: UITableViewController {
         cell.configurate(
             image: friend.images.first ?? UIImage(),
             name: friend.name,
-            additionalTextIsNeeded: false)
+            additionalTextIsNeeded: false
+        )
 
         return cell
     }
@@ -74,8 +83,8 @@ final class FriendsTableVC: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination
-              as? FriendProfileCollectionVC
+        
+        guard let destinationVC = segue.destination as? PersonProfileCollectionVC
         else { return }
         
         switch segue.identifier {
@@ -83,10 +92,9 @@ final class FriendsTableVC: UITableViewController {
             guard let indexPath = tableView.indexPathForSelectedRow
             else { break }
             let friend = People.friends[indexPath.row]
-            destinationVC.images = Array(friend.images[1...])
-            destinationVC.avatar = friend.images[0]
+            destinationVC.avatar = friend.images.first!
             destinationVC.name = friend.name
-            
+            destinationVC.images = Array(friend.images[1...])
         default:
             break
         }
@@ -108,7 +116,8 @@ final class FriendsTableVC: UITableViewController {
         }
 
         for (name, images) in zip(names, peopleImages) {
-            people.append( Person(name: name, images: images) )
+            let person = Person(name: name, images: images)
+            people.append(person)
         }
         
         People.all = people

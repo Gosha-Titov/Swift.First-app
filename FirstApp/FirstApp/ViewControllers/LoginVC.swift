@@ -84,6 +84,7 @@ final class LoginVC: UIViewController {
         let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
         self.scrollView?.contentInset = contentInsets
         scrollView?.scrollIndicatorInsets = contentInsets
+        
         UIView.animate(withDuration: 1) {
             self.scrollView.constraints
                 .first(where: {$0.identifier == "KeyboardShown"})?
@@ -98,6 +99,7 @@ final class LoginVC: UIViewController {
     @objc func keyboardWillBeHidden(notification: Notification) -> Void {
         let contentInsets = UIEdgeInsets.zero
         scrollView?.contentInset = contentInsets
+        
         UIView.animate(withDuration: 1) {
             self.scrollView.constraints
                 .first(where: {$0.identifier == "KeyboardShown"})?
@@ -113,12 +115,12 @@ final class LoginVC: UIViewController {
         switch identifier {
         case "goToMain":
             if checkUser() {
-                //clearData()
                 return true
             } else {
                 presentAlert()
                 return false
             }
+            
         default:
             return false
         }

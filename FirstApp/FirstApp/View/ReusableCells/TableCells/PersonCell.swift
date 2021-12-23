@@ -16,6 +16,9 @@ extension UIImageView {
 }
 
 class PersonCell: UITableViewCell {
+    static let identifier = "personCell"
+    static let nib = UINib(nibName: "PersonCell", bundle: nil)
+    
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var additionalLabel: UILabel!

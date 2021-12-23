@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="friendProfileCell" id="gTV-IL-0wX" customClass="FriendProfileCell" customModule="FirstApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="personPostCell" id="gTV-IL-0wX" customClass="PersonPostCell" customModule="FirstApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -46,7 +46,7 @@
             </constraints>
             <size key="customSize" width="128" height="128"/>
             <connections>
-                <outlet property="friendImage" destination="HDI-Wc-1kD" id="wrh-3f-ouK"/>
+                <outlet property="post" destination="HDI-Wc-1kD" id="Q6N-BQ-Oje"/>
             </connections>
             <point key="canvasLocation" x="194.20289855072465" y="119.86607142857142"/>
         </collectionViewCell>

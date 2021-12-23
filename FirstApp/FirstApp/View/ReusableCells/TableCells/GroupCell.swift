@@ -8,6 +8,9 @@
 import UIKit
 
 class GroupCell: UITableViewCell {
+    static let identifier = "groupCell"
+    static let nib = UINib(nibName: "GroupCell", bundle: nil)
+    
     @IBOutlet weak var groupImage: UIImageView!
     @IBOutlet weak var groupName: UILabel!
     @IBOutlet weak var additionalText: UILabel!

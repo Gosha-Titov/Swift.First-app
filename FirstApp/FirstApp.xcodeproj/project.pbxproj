@@ -10,9 +10,9 @@
 		0C7BA61127742FF500737FE7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BA61027742FF500737FE7 /* Group.swift */; };
 		0C7BA619277430E700737FE7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BA617277430E700737FE7 /* GroupCell.swift */; };
 		0C7BA61A277430E700737FE7 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C7BA618277430E700737FE7 /* GroupCell.xib */; };
-		0C96299A27740F18000B6231 /* FriendMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96299827740F18000B6231 /* FriendMainView.swift */; };
-		0CEC76122773B8AB00766CEA /* FriendProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC76102773B8AB00766CEA /* FriendProfileCell.xib */; };
-		0CEC76142773DC4000766CEA /* FriendProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC76132773DC4000766CEA /* FriendProfileCell.swift */; };
+		0C96299A27740F18000B6231 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96299827740F18000B6231 /* PersonHeaderView.swift */; };
+		0CEC76122773B8AB00766CEA /* PersonPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC76102773B8AB00766CEA /* PersonPostCell.xib */; };
+		0CEC76142773DC4000766CEA /* PersonPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC76132773DC4000766CEA /* PersonPostCell.swift */; };
 		0CEE2CC027724C740030CB86 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE2CBE27724C740030CB86 /* PersonCell.swift */; };
 		0CEE2CC127724C740030CB86 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEE2CBF27724C740030CB86 /* PersonCell.xib */; };
 		0CEE2CC327732BEA0030CB86 /* AllPeopleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE2CC227732BEA0030CB86 /* AllPeopleTableVC.swift */; };
@@ -25,18 +25,18 @@
 		0CEF4F5527701C43004B61C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF4F5327701C43004B61C8 /* LaunchScreen.storyboard */; };
 		0CEF4F6027701D3B004B61C8 /* FriendsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F5F27701D3B004B61C8 /* FriendsTableVC.swift */; };
 		0CEF4F6227701D53004B61C8 /* GroupsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6127701D53004B61C8 /* GroupsTableVC.swift */; };
-		0CEF4F6427701D71004B61C8 /* FriendProfileCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6327701D71004B61C8 /* FriendProfileCollectionVC.swift */; };
+		0CEF4F6427701D71004B61C8 /* PersonProfileCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6327701D71004B61C8 /* PersonProfileCollectionVC.swift */; };
 		0CEF4F6627701D84004B61C8 /* AllGroupsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6527701D84004B61C8 /* AllGroupsTableVC.swift */; };
-		0CEF4F6827701DAA004B61C8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6727701DAA004B61C8 /* ProfileVC.swift */; };
+		0CEF4F6827701DAA004B61C8 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEF4F6727701DAA004B61C8 /* UserProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C7BA61027742FF500737FE7 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		0C7BA617277430E700737FE7 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		0C7BA618277430E700737FE7 /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
-		0C96299827740F18000B6231 /* FriendMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMainView.swift; sourceTree = "<group>"; };
-		0CEC76102773B8AB00766CEA /* FriendProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendProfileCell.xib; sourceTree = "<group>"; };
-		0CEC76132773DC4000766CEA /* FriendProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileCell.swift; sourceTree = "<group>"; };
+		0C96299827740F18000B6231 /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
+		0CEC76102773B8AB00766CEA /* PersonPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonPostCell.xib; sourceTree = "<group>"; };
+		0CEC76132773DC4000766CEA /* PersonPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPostCell.swift; sourceTree = "<group>"; };
 		0CEE2CBE27724C740030CB86 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		0CEE2CBF27724C740030CB86 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		0CEE2CC227732BEA0030CB86 /* AllPeopleTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPeopleTableVC.swift; sourceTree = "<group>"; };
@@ -51,9 +51,9 @@
 		0CEF4F5627701C43004B61C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CEF4F5F27701D3B004B61C8 /* FriendsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableVC.swift; sourceTree = "<group>"; };
 		0CEF4F6127701D53004B61C8 /* GroupsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableVC.swift; sourceTree = "<group>"; };
-		0CEF4F6327701D71004B61C8 /* FriendProfileCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileCollectionVC.swift; sourceTree = "<group>"; };
+		0CEF4F6327701D71004B61C8 /* PersonProfileCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfileCollectionVC.swift; sourceTree = "<group>"; };
 		0CEF4F6527701D84004B61C8 /* AllGroupsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableVC.swift; sourceTree = "<group>"; };
-		0CEF4F6727701DAA004B61C8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		0CEF4F6727701DAA004B61C8 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		0C96299727740EF5000B6231 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				0C96299827740F18000B6231 /* FriendMainView.swift */,
+				0C96299827740F18000B6231 /* PersonHeaderView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -78,8 +78,8 @@
 		0CEC760E2773B85D00766CEA /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
-				0CEC76132773DC4000766CEA /* FriendProfileCell.swift */,
-				0CEC76102773B8AB00766CEA /* FriendProfileCell.xib */,
+				0CEC76132773DC4000766CEA /* PersonPostCell.swift */,
+				0CEC76102773B8AB00766CEA /* PersonPostCell.xib */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -157,12 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				0CEF4F4C27701C41004B61C8 /* LoginVC.swift */,
+				0CEF4F6727701DAA004B61C8 /* UserProfileVC.swift */,
 				0CEF4F5F27701D3B004B61C8 /* FriendsTableVC.swift */,
-				0CEF4F6127701D53004B61C8 /* GroupsTableVC.swift */,
 				0CEE2CC227732BEA0030CB86 /* AllPeopleTableVC.swift */,
-				0CEF4F6327701D71004B61C8 /* FriendProfileCollectionVC.swift */,
+				0CEF4F6327701D71004B61C8 /* PersonProfileCollectionVC.swift */,
+				0CEF4F6127701D53004B61C8 /* GroupsTableVC.swift */,
 				0CEF4F6527701D84004B61C8 /* AllGroupsTableVC.swift */,
-				0CEF4F6727701DAA004B61C8 /* ProfileVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			files = (
 				0CEF4F5527701C43004B61C8 /* LaunchScreen.storyboard in Resources */,
 				0C7BA61A277430E700737FE7 /* GroupCell.xib in Resources */,
-				0CEC76122773B8AB00766CEA /* FriendProfileCell.xib in Resources */,
+				0CEC76122773B8AB00766CEA /* PersonPostCell.xib in Resources */,
 				0CEF4F5227701C43004B61C8 /* Assets.xcassets in Resources */,
 				0CEE2CC127724C740030CB86 /* PersonCell.xib in Resources */,
 				0CEF4F5027701C41004B61C8 /* Main.storyboard in Resources */,
@@ -254,16 +254,16 @@
 				0CEF4F4D27701C41004B61C8 /* LoginVC.swift in Sources */,
 				0CEF4F6227701D53004B61C8 /* GroupsTableVC.swift in Sources */,
 				0CEF4F6627701D84004B61C8 /* AllGroupsTableVC.swift in Sources */,
-				0C96299A27740F18000B6231 /* FriendMainView.swift in Sources */,
+				0C96299A27740F18000B6231 /* PersonHeaderView.swift in Sources */,
 				0CEE2CC327732BEA0030CB86 /* AllPeopleTableVC.swift in Sources */,
 				0CEE2CC52773324A0030CB86 /* Person.swift in Sources */,
 				0CEE2CC027724C740030CB86 /* PersonCell.swift in Sources */,
 				0C7BA61127742FF500737FE7 /* Group.swift in Sources */,
 				0CEF4F4927701C41004B61C8 /* AppDelegate.swift in Sources */,
-				0CEC76142773DC4000766CEA /* FriendProfileCell.swift in Sources */,
+				0CEC76142773DC4000766CEA /* PersonPostCell.swift in Sources */,
 				0CEF4F6027701D3B004B61C8 /* FriendsTableVC.swift in Sources */,
-				0CEF4F6427701D71004B61C8 /* FriendProfileCollectionVC.swift in Sources */,
-				0CEF4F6827701DAA004B61C8 /* ProfileVC.swift in Sources */,
+				0CEF4F6427701D71004B61C8 /* PersonProfileCollectionVC.swift in Sources */,
+				0CEF4F6827701DAA004B61C8 /* UserProfileVC.swift in Sources */,
 				0CEF4F4B27701C41004B61C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

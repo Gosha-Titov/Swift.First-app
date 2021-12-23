@@ -217,7 +217,7 @@
         <!--Profile-->
         <scene sceneID="FtG-QG-GhC">
             <objects>
-                <viewController id="xNR-wK-tQU" customClass="ProfileVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xNR-wK-tQU" customClass="UserProfileVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9s-Hm-rr4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mainImage" destination="cdu-EP-bUU" id="zZd-JJ-41c"/>
+                        <outlet property="avatar" destination="cdu-EP-bUU" id="7nO-TB-kqO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2s5-hF-PT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -361,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="4254" y="-1393"/>
         </scene>
-        <!--Friend Profile CollectionVC-->
+        <!--Person Profile CollectionVC-->
         <scene sceneID="vvQ-Er-kCW">
             <objects>
-                <collectionViewController id="ZeR-2G-eZK" customClass="FriendProfileCollectionVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="ZeR-2G-eZK" customClass="PersonProfileCollectionVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nzq-dL-sBY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,7 +376,7 @@
                             <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells/>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="friendMainView" id="INP-BO-2uR" customClass="FriendMainView" customModule="FirstApp" customModuleProvider="target">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="personHeaderView" id="INP-BO-2uR" customClass="PersonHeaderView" customModule="FirstApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="320"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -413,8 +413,8 @@
                                 <constraint firstAttribute="trailing" secondItem="nNy-s4-THz" secondAttribute="trailing" id="r9h-gg-eVm"/>
                             </constraints>
                             <connections>
-                                <outlet property="friendAvatar" destination="1rD-OR-8M0" id="KSi-rX-JbU"/>
-                                <outlet property="friendName" destination="M3H-U9-RPF" id="DUF-V4-Ffo"/>
+                                <outlet property="avatar" destination="1rD-OR-8M0" id="m2r-Bg-a4L"/>
+                                <outlet property="name" destination="M3H-U9-RPF" id="LT8-8t-hxS"/>
                             </connections>
                         </collectionReusableView>
                         <connections>

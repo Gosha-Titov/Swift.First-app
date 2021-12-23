@@ -13,7 +13,11 @@ final class AllPeopleTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "PersonCell", bundle: nil), forCellReuseIdentifier: "personCell")
+        
+        tableView.register(
+            PersonCell.nib,
+            forCellReuseIdentifier: PersonCell.identifier
+        )
     }
 
     // MARK: - Table view data source
@@ -24,7 +28,10 @@ final class AllPeopleTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath) as? PersonCell
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: PersonCell.identifier,
+                for: indexPath
+            ) as? PersonCell
         else { return UITableViewCell() }
 
         let person = People.all[indexPath.row]

@@ -13,7 +13,10 @@ class AllGroupsTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "GroupCell", bundle: nil), forCellReuseIdentifier: "groupCell")
+        
+        tableView.register(
+            GroupCell.nib,
+            forCellReuseIdentifier: GroupCell.identifier)
     }
 
     // MARK: - Table view data source
@@ -24,7 +27,10 @@ class AllGroupsTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath) as? GroupCell
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: GroupCell.identifier,
+                for: indexPath
+            ) as? GroupCell
         else { return UITableViewCell() }
 
         let group = Groups.all[indexPath.row]
@@ -36,7 +42,8 @@ class AllGroupsTableVC: UITableViewController {
         cell.configurate(
             image: group.image,
             name: group.name,
-            additionalTextIsNeeded: condition)
+            additionalTextIsNeeded: condition
+        )
 
         return cell
     }
